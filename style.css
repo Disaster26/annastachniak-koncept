@@ -182,7 +182,7 @@ p{margin:0 0 1em}
 .strz svg{width:16px;height:16px;fill:none;stroke:var(--ink);stroke-width:1.6}
 
 /* kafle oferty */
-.k-kafle .tor{grid-auto-columns:minmax(0,78%)}
+.k-kafle .tor{grid-auto-columns:78%}
 .kafel{display:block;text-decoration:none;color:var(--ink)}
 .kafel figure{margin:0 0 14px;overflow:hidden;border-radius:var(--r)}
 .kafel img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
@@ -192,7 +192,7 @@ p{margin:0 0 1em}
 .kafel:hover h3::before{opacity:1}
 .kafel p{color:var(--ink2);margin-bottom:.5em}
 .wiecej{display:inline-flex;align-items:center;gap:8px;color:var(--rose-d);font-weight:500}
-@media (min-width:640px){.k-kafle .tor{grid-auto-columns:minmax(0,calc(50% - 8px))}}
+@media (min-width:640px){.k-kafle .tor{grid-auto-columns:calc(50% - 8px)}}
 @media (min-width:980px){.k-kafle .tor{grid-auto-flow:row;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px 28px;overflow:visible;cursor:auto}.k-kafle .nawig{display:none}}
 
 /* galerie zdjęć: naturalne proporcje, nic nie ucięte */
@@ -232,12 +232,12 @@ p{margin:0 0 1em}
 }
 
 /* opinie */
-.k-opinie .tor{grid-auto-columns:minmax(0,86%)}
-@media (min-width:700px){.k-opinie .tor{grid-auto-columns:minmax(0,calc(50% - 8px))}}
-@media (min-width:1100px){.k-opinie .tor{grid-auto-columns:minmax(0,calc(33.333% - 11px))}}
+.k-opinie .tor{grid-auto-columns:86%}
+@media (min-width:700px){.k-opinie .tor{grid-auto-columns:calc(50% - 8px)}}
+@media (min-width:1100px){.k-opinie .tor{grid-auto-columns:calc(33.333% - 11px)}}
 .opinia{margin:0;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:28px 26px 24px;display:flex;flex-direction:column}
 .sekcja:not(.jasna) .opinia{background:var(--jasne);border-color:transparent}
-.cudz{font:400 3.4rem/0.6 var(--serif);color:var(--rose);height:.5em;display:block;margin-bottom:6px}
+.cudz{font:400 3.4rem/1 var(--serif);color:var(--rose);height:.42em;display:block;margin-bottom:10px;overflow:hidden}
 .opinia blockquote{margin:0 0 16px;font-size:1rem;line-height:1.62;color:var(--ink);flex:1}
 .opinia figcaption{font:400 1.1rem var(--serif);color:var(--rose-dd)}
 .zrodlo{font-size:.9rem;color:var(--ink2);margin-top:14px}
